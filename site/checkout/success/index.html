@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Order confirmed | Bora Signs</title>
+<meta name="description" content="Secure checkout">
+<link rel="canonical" href="https://borasigns.co.uk/checkout/success/">
+<meta property="og:title" content="Order confirmed | Bora Signs">
+<meta property="og:description" content="Secure checkout">
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0812/9517/9812/files/OF2G-magnetic-van-sign-panel_abb443e7-6337-4174-9ced-c93de367148b.webp?width=1200">
+<meta name="theme-color" content="#0b2a42">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.shopify.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta name="robots" content="noindex">
+</head>
+<body class="co">
+<header class="co__hdr"><div class="wrap"><a href="/"><img src="https://cdn.shopify.com/s/files/1/0812/9517/9812/files/BoraSignsLogoWhite.svg" alt="Bora Signs" width="257" height="26"></a><a class="back" href="/products/magnetic-van-signs/">← <b>Back to </b>shop</a></div></header>
+<main id="main"><div class="done">
+  <div id="done-loading" class="co__loading"><div><div class="spin"></div>Confirming your order…</div></div>
+  <div id="done-state" hidden>
+    <div class="done__ok"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="3"/><path d="M15 24.5l6 6L33 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><p>Order <b id="order-ref"></b> · <span id="order-total"></span></p><h1>Thank you! Now send us your logo</h1></div></div>
+    <p>A receipt is on its way to <b id="order-email">your email</b>. To start your free design, upload your logo and tell us what you'd like on your signs. Your proof arrives in 2–3 days.</p>
+    <form class="form" name="artwork" method="POST" action="/checkout/success/thanks/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company">
+      <input type="hidden" name="form-name" value="artwork">
+      <input type="hidden" name="order" id="f-order">
+      <p class="sr-only"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+      <div class="row2">
+        <div class="field"><label for="f-name">Name</label><input class="input" id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-email">Email</label><input class="input" id="f-email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="f-biz">Business name</label><input class="input" id="f-biz" name="business"></div>
+      <div class="field"><label for="f-logo">Your logo (PNG, JPG, PDF, SVG or AI — up to 8 MB)</label><input class="input" id="f-logo" name="logo" type="file" accept=".png,.jpg,.jpeg,.pdf,.svg,.ai,.eps"></div>
+      <div class="field"><label for="f-text">What should your signs say?</label><textarea id="f-text" name="details" placeholder="Business name, phone number, website, services, colours you like…"></textarea></div>
+      <button class="btn" type="submit">Send to our designers</button>
+      <p class="pdp__note" style="margin:0">No logo? No problem. Leave it blank and we'll design one from your business name.</p>
+    </form>
+  </div>
+</div></main>
+<div class="drawer" id="cart" aria-hidden="true"><button id="cart-close" hidden></button></div>
+<script src="/assets/js/site.js" defer></script><script src="/assets/js/success.js" defer></script>
+</body></html>
