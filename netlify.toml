@@ -24,7 +24,8 @@
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+    # Always check for a newer copy so site edits show up right away
+    Cache-Control = "public, max-age=0, must-revalidate"
 [[headers]]
   for = "/checkout/*"
   [headers.values]

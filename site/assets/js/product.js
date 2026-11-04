@@ -29,7 +29,7 @@
     range.addEventListener('input', upd); upd();
   }
 
-  const cat = await fetch('/assets/data/catalog.json').then(r => r.json());
+  const cat = await fetch('/assets/data/catalog.json?v=20261104').then(r => r.json());
   const vans = cat.vans; // [make, model, wheelbase, size, from, to]
   const make = $('#van-make'), model = $('#van-model'), year = $('#van-year'), wb = $('#van-wb');
   const opts = (sel, label, list) => {
